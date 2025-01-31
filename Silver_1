@@ -26,7 +26,7 @@ SELECT
         WHEN UPPER(TRIM(prd_line)) = 'R' THEN 'Road'
         WHEN UPPER(TRIM(prd_line)) = 'S' THEN 'Other Sales'
         WHEN UPPER(TRIM(prd_line)) = 'T' THEN 'Touring'
-        ELSE 'NOT APPLICALBE'
+        ELSE 'n/a'
     END AS prd_line,
     prd_start_dt,
     -- Calculate prd_end_dt as the day before the next prd_start_dt within the same prd_key partition
