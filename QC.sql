@@ -1,5 +1,5 @@
 
----Quality Check 
+---Quality Check 2
 --duplicate
 SELECT prd_id, count(*) FROM silver.crm_prd_info group by prd_id having count(*)>1 ;
 SELECT prd_id, count(*) FROM silver.crm_prd_info group by prd_id having count(*)>1 ;
@@ -23,6 +23,6 @@ select * from silver.crm_prd_info where prd_end_dt<prd_start_dt;
 -- handling missing iformation ( Instead of Null we changing into 0)
 -- Data Normalizatoin ( case when like more friend word convestion) 
 -- Data Enrichment
--- (using Lead function corrected dates, add new relavnt data to enhance the dataset for analysis)
+-- (add new relavnt data to enhance the dataset for analysis)
 
 
