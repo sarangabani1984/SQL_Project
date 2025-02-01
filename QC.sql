@@ -2,7 +2,7 @@
 ---Quality Check 
 --duplicate
 SELECT prd_id, count(*) FROM silver.crm_prd_info group by prd_id having count(*)>1 ;
-
+SELECT prd_id, count(*) FROM silver.crm_prd_info group by prd_id having count(*)>1 ;
 
 --Check the white space
 SELECT prd_nm FROM silver.crm_prd_info where prd_nm != trim(prd_nm);
