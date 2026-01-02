@@ -1,5 +1,5 @@
 -- Create Sales table with NULL values in TotalAmount
-CREATE TABLE Sales (
+CREATE TABLE Sales1 (
     SaleID INT PRIMARY KEY,
     SaleDate DATE,
     ProductName VARCHAR(100),
@@ -7,7 +7,7 @@ CREATE TABLE Sales (
 );
 
 -- Insert sample data with some NULL values in TotalAmount
-INSERT INTO Sales (SaleID, SaleDate, ProductName, TotalAmount) VALUES
+INSERT INTO Sales1 (SaleID, SaleDate, ProductName, TotalAmount) VALUES
 (1, '2025-01-15', 'Laptop', 1200.00),
 (2, '2025-01-16', 'Mouse', 25.50),
 (3, '2025-01-17', 'Laptop', NULL),
@@ -30,7 +30,7 @@ INSERT INTO Sales (SaleID, SaleDate, ProductName, TotalAmount) VALUES
 (20, '2025-02-04', 'Monitor', 380.00);
 
 -- View the data
-SELECT * FROM Sales;
+SELECT * FROM Sales1;
 
 -- Check NULL values
 SELECT 
